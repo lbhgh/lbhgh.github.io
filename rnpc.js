@@ -1,7 +1,7 @@
 var gen_data = {};
 
   gen_data['main'] = [
-    '{title}{first_name}{middle_name}{second_name} - ({align}). A {gender} {race} {profession}/{class}. They wear {armor}({quality}), and wield {weapon}({quality}). They beleive in {god} They seek {goal}.\n'
+    '{title}{first_name}{middle_name}{second_name} - ({align}). A {gender} {race} {profession}/{class}. They wear {armor} ({quality}), and wield {weapon} ({quality}). They seek {goal}. They beleive in {god}.\n'
   ];
   gen_data['gender'] = [
     'male', 'female'
@@ -31,42 +31,44 @@ var gen_data = {};
     'leather armor','chainmail', 'plate armor', 'linen robes', 'silk robes', 'cotton clothes', 'bark armour', 'rags', 'hose and blouse'
   ];
   gen_data['quality'] = {
-    '01-75': 'common',
-    '76-90': 'finest',
-    '91-00': 'masterwork'
+    '01-50': 'common',
+    '51-74': 'uncommon',
+    '75-85': 'rare',
+    '86-94': 'very rare',
+    '95-00': 'legendary',
   };
   gen_data['weapon'] = [
     '{nothing}',
-    '{melee_weapon}',
+    'a {melee_weapon}',
     '{melee_weapon} and a shield',
     '{dual_weapons}',
-    '{ranged_weapon}'
+    'a {ranged_weapon}'
   ];
   gen_data['nothing'] = [
     'nothing',
   ];
   gen_data['melee_weapon'] = [
-    'a battleaxe', 'a mace', 'a spear', 'a sword', 'a dagger', 'a maul', 'a shortsword', 'a longsword', 'a greatsword', 'a staff', 'a quartestaff'
+    'battleaxe', 'mace', 'spear', 'sword', 'dagger', 'maul', 'shortsword', 'longsword', 'greatsword', 'staff', 'quartestaff'
   ];
   gen_data['ranged_weapon'] = [
-    'a longbow and arrows', 'a heavy crossbow', 'a light crossbow', 'a shortbow', 'a shuriken', 'a throwing axe', 'a blowpipe'
+    'longbow and arrows', 'heavy crossbow', 'light crossbow', 'shortbow', 'shuriken', 'throwing axe', 'blowpipe'
   ];
   gen_data['dual_weapons'] = [
-    'and dual blades', 'and dual handaxes', 'and dual shortswords', 'and nunchucks',
+    'dual blades', 'dual handaxes', 'dual shortswords', 'nunchucks',
   ];
   gen_data['first_name'] = [
     'Dalker','Lintto','Maydey','Danon','Wankende','Lynchal','Mckend','Joviuss','Gancir','Hachad','Qunell','Ellb','Coleryt','Gasent','Conde','Hanten','Brobyt','Werden','Nolmi','Dodintt','Issan','Dinant','Wydike','Dicton','Chenk','Danken','Haston','Wyden','Wirent','Qusal','Montte','Donnth','Confan','Sthal','Vandet','Mam','Auntol','Honc','Dastolli','Manisc','Wentelve','Danfard','Donke','Gasen','Benttonc','Mettto','Darllde','Dobya','Derento','Alerrke','Heldin','Arincor','Brld','Erieri','Brerk','Arydend','Arrilb','Elttontu','Arincha','Hasap','Styay','Donl','Elkente','Merdie','Ponder','Dalmic','Corwt','Geto','Macenw','Damalli','Lustoll','Bendo','Chap','Dolorl','Dintttha','Dorariu','Arrina','Coontei','Genen','Antorm','Covewo','Dantha','Dacolt','Kewoon','Gantonto','Gananc','Grindel','Wenten','Hanwo','Harice','Elden','Hand','HascKe','Vaph','Varw','Daten','Janwit','Ranken','Brentors','Arisale','Conde','Danonte','Gariren','Alldewi','Elllb','Arde','Mande','Galor','Hanton','Liusal','Isonen','Dolalto','Kecte','Wyal','Wentyn','Lelll','Shas','Dadwon','Renannt','Wari','Edetond','Malbyth','Jaeran','Roney','Cont','Betol','Alende','Chant','Diust','Garon','Ditoro','Wydinell','Steni','Jariton','Donder','Tryto','Arorsa','Darmen','Mentend','Dodel','Coreri','Mandenl','Donwic','Jalonc','Isasct','Dallll','Kenitt','Honct','Arici','Mirama','Trrl','Chano','Handel','Wiene','Brddey','Werteg','Conona','Mewen','Bretonde','Broneri','Kentol','Donttan','Aldic','Arerr','Austha','Horici','Gacicha','Hareri','Dorsch','Marrin','Jantall','Dantto','Brinf','Ardent','Masator','Anaro','Austenn','Brrolt','Dartor','Lustob','Lydwin','Vamiante','Brrobyn','Lintto','Auston','Hedenent','Hesene','Noyte','Bryde','Elckewi','Nond','Brondwt','Torretto','Dondet','Cooto','Daric','Generoto','Conto','Hondde','Dadert','Chented','Tovite','Brsad','Cottom','Jarkeni','Sten','Aricor','Wenlmi','Dill','Joreral','Meranw','Brinto','Dontod','Haltord','Scorichas','Welenif','Stharin','Corme','Meguint','Mastyt','Mardelt','Conddo','Contt','Garrr','Dicol','Dork','Dellel','Jalln','Shariel','Lusan','Danwt','Tonikel','Aldori','Cascha','Mento','Sharyno','Denfa','Keytes','Alll','Trmaril','Rarmide','Aronwic','Elmeve','Brerrk','Valbya','Herr','Kelvic','Raster','Quston','Gaston','Linad','Ront','Ganeron',"Aaron","Abraham","Adam","Adolph","Albert","Alex","Alexander","Alfred","Allen","Alonzo","Alva","Alvin","Amos","Andrew","Anthony","Anton","Archie","Arnold","Arthur","August","Ben","Benjamin","Bennie","Bernard","Bert","Bill","Calvin","Carl","Cecil","Charles","Charley","Charlie","Chester","Christopher","Clarence","Claud","Claude","Clayton","Cleveland","Clifford","Clifton","Clinton","Clyde","Cornelius","Curtis","Dan","Daniel","Dave","David","Dennis","Dewey","Donald","Earl","Earnest","Ed","Eddie","Edgar","Edmund","Edward","Edwin","Elbert","Eli","Elijah","Ellis","Elmer","Emil","Emmett","Ernest","Eugene","Everett","Felix","Floyd","Francis","Frank","Franklin","Fred","Frederick","Fredrick","George","Gerald","Gilbert","Glen","Glenn","Gordon","Grover","Gus","Guy","Harley","Harold","Harrison","Harry","Harvey","Henry","Herbert","Herman","Hiram","Homer","Horace","Howard","Hubert","Hugh","Ira","Irvin","Irving","Isaac","Jack","Jacob","Jake","James","Jasper","Jay","Jeff","Jerry","Jess","Jesse","Jessie","Jim","Joe","John","Johnnie","Jose","Joseph","Julius","Kenneth","Lawrence","Lee","Leo","Leon","Leonard","Leroy","Leslie","Lester","Levi","Lewis","Lloyd","Lonnie","Louis","Luther","Mack","Manuel","Marion","Mark","Marshall","Martin","Marvin","Matthew","Maurice","Max","Melvin","Michael","Mike","Milton","Morris","Moses","Nathan","Nelson","Nicholas","Noah","Norman","Oliver","Ollie","Orville","Oscar","Otis","Otto","Owen","Patrick","Paul","Percy","Perry","Peter","Philip","Phillip","Ralph","Ray","Raymond","Reuben","Richard","Robert","Roland","Roscoe","Ross","Roy","Rudolph","Rufus","Russell","Sam","Samuel","Sherman","Sidney","Silas","Simon","Stanley","Stephen","Steve","Sylvester","Theodore","Thomas","Timothy","Tom","Vernon","Victor","Vincent","Virgil","Wallace","Walter","Warren","Wesley","Wilbur","Wiley","Will","Willard","William","Willie","Willis","Wilson",
 
   ];
   gen_data['second_name'] = [
-    'Mildash','Plainstrider','Greatbreath','Twospell','Misttalon','Summerbrow','Horsewoods','Crestwalker','Mildmight','Mountainglory','Icegaze','Crowsplitter','Twosurge','Shadowtalon','Barleyforge','Glowrock','Fallenbone','Darkmane','Coldwhisk','Nightroar','Freebringer','Twilightbraid','Hazerock','Hawkmaul','Icebranch','Prideswallow','Singlesnarl','Thunderless','Hallowbrace','Mildhammer','Snakeshield','Pinetide','Regalwoods','Grassrunner','Moonbluff','Proudbranch','Warrage','Fernpunch','Sharpmaw','Humblebrooke','Ravenbrow','Downshot','Silverlash','Hallowcrag','Hazeforge','Palewoods','Nosesprinter','Wyvernhide','Marshdew','Bladeroar','Hardflow','Fourwhisk','Whisperforest','Sacredwhisper','Snowreaver','Dirgebough','Hawkroot','Hallowpike','Voidthorne','Cinderdrifter','Distantwound','Sageglide','Cloudshard','Nickleshield','Flameshadow','Pridebeard','Deathsworn','Holygazer','Glorystone','Forestswift',
+    'Mildash','Plainstrider','Greatbreath','Twospell','Misttalon','Summerbrow','Horsewoods','Crestwalker','Mildmight','Mountainglory','Icegaze','Crowsplitter','Twosurge','Shadowtalon','Barleyforge','Glowrock','Fallenbone','Darkmane','Coldwhisk','Nightroar','Freebringer','Twilightbraid','Hazerock','Hawkmaul','Icebranch','Prideswallow','Singlesnarl','Thunderless','Hallowbrace','Mildhammer','Snakeshield','Pinetide','Regalwoods','Grassrunner','Moonbluff','Proudbranch','Warrage','Fernpunch','Sharpmaw','Humblebrooke','Ravenbrow','Downshot','Silverlash','Hallowcrag','Hazeforge','Palewoods','Nosesprinter','Wyvernhide','Marshdew','Bladeroar','Hardflow','Fourwhisk','Whisperforest','Sacredwhisper','Snowreaver','Dirgebough','Hawkroot','Hallowpike','Voidthorne','Cinderdrifter','Distantwound','Sageglide','Cloudshard','Nickleshield','Flameshadow','Pridebeard','Deathsworn','Holygazer','Glorystone','Forestswift','Cottondil','Braspen','Goben','Almárea','Ruscuite','Tindasicil','Cidinnanc','Sírdhemben','Gwaun','Edhellen','Bellanc','Satya','Uamben','Gaud','Formenya','Gilben','Helca','Feldil','Orcher','Angivren','Raica','Amatphen','Milca','Aira','Rondil','Noror','Beleg','Olombondur','Hithaerphen','Aroben','Larca','Banamath','Celon','Achathriw','Cútaþar','Edwen','Aeglospen','Gailben','Agaren','Cabor','Beniamath','Ninniacphen','Amdirvel','Galadil','Amathwaen','Gwaeremben','Himben','Tuilindil','Ossehuine','Elquasse','Nathaldil','Fuior','Vaniþaura','Aeben','Egeleb','Caimatan','Hû','Brogaegas','Bregolalph','Dúven','Gortheb','Nauta','Adaben','Limdil','Umbardil','Amdirvilui','Gellamher','Gorthasser','Arodagar','Alfirin','Fuin','Lûth','Morher','Oll','Gaeruil',
 
   ];
 
   gen_data['middle_name'] = {
     '01-75': '\0',
     '76-90': ' Banlie ',
-    '91-00': ' Kurgoon '
+    '91-00': ' Kurgoon ',
   };
 
   gen_data['title'] = {
@@ -91,4 +93,4 @@ var gen_data = {};
 
 
   ];
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
