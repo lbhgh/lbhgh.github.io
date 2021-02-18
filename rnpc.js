@@ -80,7 +80,7 @@ var gen_data = {};
   };
 
   gen_data['title'] = {
-    '01-80': '\0',
+    '01-80': ,
     '81-90': 'Ser ',
     '91-00': 'Justicar '
   };
