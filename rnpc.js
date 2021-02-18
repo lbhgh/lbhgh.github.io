@@ -1,7 +1,7 @@
 var gen_data = {};
 
   gen_data['main'] = [
-    '{title}{first_name}{middle_name}{second_name} - ({align}). A {gender} {race} {profession}/{class}. They wear {armor}, and wield {weapon}. They seek {goal}. They beleive in {god}\n'
+    '{first_name}{middle_name}{second_name}{title} - ({align}). A {gender} {race} {profession}/{class}. They wear {armor}, and wield {weapon}. They seek {goal}. They beleive in {god}\n'
   ];
 
   gen_data['gender'] = [
@@ -80,9 +80,9 @@ var gen_data = {};
   };
 
   gen_data['title'] = {
-    '01-80': '',
-    '81-90': 'Ser ',
-    '91-00': 'Justicar '
+    '01-80': '\0',
+    '81-90': '(Ser)',
+    '91-00': '(Justicar)'
   };
 
   gen_data['profession'] = [
