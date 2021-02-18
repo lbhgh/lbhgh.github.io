@@ -1,10 +1,10 @@
 function button()
 {
-  document.getElementById('result').innerHTML = more_random();
+  document.getElementById("result").innerHTML = more_random();
 }
 
 function more_random()
-{var a=document.getElementById('result');
+{var a=document.getElementById("result");
 b=parseInt(a.rows);
 if(b<1)b=1;
 b=generate_list("main",b);
