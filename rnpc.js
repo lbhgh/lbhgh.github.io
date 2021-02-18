@@ -46,7 +46,7 @@ var gen_data = {};
   gen_data['weapon'] = [
     '{nothing}',
     'a {melee_weapon} ({quality})',
-    '{melee_weapon} ({quality})and a shield',
+    'a {melee_weapon} ({quality}) and a shield',
     '{dual_weapons} ({quality})',
     'a {ranged_weapon} ({quality})',
   ];
