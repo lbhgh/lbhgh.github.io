@@ -6,8 +6,6 @@
 	<link rel="shortcut icon" href="./favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
    	<link rel="stylesheet" type="text/css" href="./style.css">
-   	<script type="text/javascript" src="./rnpc.js"></script>
-	<script type="text/javascript" src="./random.js"></script>
 </head>	
 <body>
 	<button id="dark-button" onclick="darkToggle()">Dark Mode</button>
@@ -23,12 +21,14 @@
 <div align="center">
      <form method="get" onsubmit="return false;">
 	<p><input type="button" value="Generate" onclick="more_random();" /></p>
-	<p><textarea id="output" cols="50" rows="60" readonly style="overflow:hidden"></textarea></p>
+	<p><div id="output" cols="50" rows="60" readonly style="overflow:hidden"></div></p>
     </form>
     </div>
 	
 <footer>
 </footer>
 	<script type="text/javascript" src="./darkmode.js"></script>
+	<script type="text/javascript" src="./random.js"></script>
+	<script type="text/javascript" src="./rnpc.js"></script>
 </body>
 </html>
