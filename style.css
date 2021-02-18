@@ -38,10 +38,3 @@ img, video{
 	max-width: 600px;
 	border: 2px solid #eba613;
 }
-
-textarea.noscrollbars {
-  overflow: hidden;
-  width: 300px;
-  height: 100px;
-  font-family: Arial;
-}
