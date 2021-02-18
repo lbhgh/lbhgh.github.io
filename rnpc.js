@@ -1,7 +1,7 @@
 var gen_data = {};
 
   gen_data['main'] = [
-    '{title}{first_name}{middle_name}{second_name} - ({align}). A {gender} {race} {profession}/{class}. They wear {armor} ({quality}), and wield {weapon} ({quality}). They seek {goal}. They beleive in {god}\n'
+    '{title}{first_name}{middle_name}{second_name} - ({align}). A {gender} {race} {profession}/{class}. They wear {armor}, and wield {weapon}. They seek {goal}. They beleive in {god}\n'
   ];
 
   gen_data['gender'] = [
@@ -32,7 +32,7 @@ var gen_data = {};
   };
 
   gen_data['armor'] = [
-    'leather armor','chainmail', 'plate armor', 'linen robes', 'silk robes', 'cotton clothes', 'bark armour', 'rags', 'hose and blouse'
+    'leather armor ({quality})','chainmail ({quality})', 'plate armor ({quality})', 'linen robes ({quality})', 'silk robes ({quality})', 'cotton clothes ({quality})', 'bark armour ({quality})', 'rags', 'hose and blouse ({quality})'
   ];
 
   gen_data['quality'] = {
@@ -45,10 +45,10 @@ var gen_data = {};
 
   gen_data['weapon'] = [
     '{nothing}',
-    'a {melee_weapon}',
-    '{melee_weapon} and a shield',
-    '{dual_weapons}',
-    'a {ranged_weapon}'
+    'a {melee_weapon}' ({quality}),
+    '{melee_weapon} ({quality})and a shield',
+    '{dual_weapons} ({quality})',
+    'a {ranged_weapon} ({quality})'
   ];
 
   gen_data['nothing'] = [
