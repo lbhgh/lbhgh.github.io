@@ -8,23 +8,8 @@
 	<script type="text/javascript" src="./darkmode.js"></script>
     <script type="text/javascript" src="./rnpc.js"></script>
 	<script type="text/javascript" src="./random.js"></script>
-	  
-	  <script>
-function clickCounter() {
-  if(typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount)+1;
-    } else {
-      localStorage.clickcount = 1;
-    }
-    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
-  } else {
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-  }
-}
-</script>
-	  
   </head>
+	
   <body>
 <button id="dark-button" onclick="darkToggle()">Dark Mode</button>
 <nav>
@@ -38,16 +23,10 @@ function clickCounter() {
 
 <div align="center">
      <form method="get" onsubmit="return false;">
-      <p><textarea id="output" cols="40" rows="70" readonly style="overflow:hidden"></textarea></p>
+      <p><textarea id="output" cols="40" rows="60" readonly style="overflow:hidden"></textarea></p>
       <p><input type="button" value="Generate" onclick="more_random();" /></p>
     </form>
     </div>
-	
-	<p><button onclick="clickCounter()" type="button">Click me!</button></p>
-<div id="result"></div>
-<p>Click the button to see the counter increase.</p>
-<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
-	<footer>
 
 </footer>
   </body>
