@@ -4,7 +4,7 @@ function button()
 }
 
 function more_random()
-{var a=5;
+{var a=document.getElementById('result');
 b=parseInt(a.rows);
 if(b<1)b=1;
 b=generate_list("main",b);
