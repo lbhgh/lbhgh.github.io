@@ -1,7 +1,7 @@
 var gen_data = {};
 
   gen_data['main'] = [
-    '{first_name}{middle_name}{second_name} {title}- ({align}). A {gender} {race} {profession}/{class}. They wear {armor}, and wield {weapon}. They seek {goal}. They beleive in {god}\n'
+    '{first_name}{middle_name}{second_name} {title}- ({align}).\n A {gender} {race} {profession}/{class}.\n They wear {armor}, and wield {weapon}.\n They seek {goal}. They beleive in {god}\n\n'
   ];
 
   gen_data['gender'] = [
