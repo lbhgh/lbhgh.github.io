@@ -28,7 +28,7 @@ var gen_data = {};
     '97-00': 'CG'
   };
   gen_data['armor'] = [
-    'leather armor','chainmail', 'plate armor','linen robes, 'silk robes', 'cotton clothes', 'bark armour', 'rags', 'hose and blouse'
+    'leather armor','chainmail', 'plate armor', 'linen robes', 'silk robes', 'cotton clothes', 'bark armour', 'rags', 'hose and blouse'
   ];
   gen_data['quality'] = {
     '01-75': 'common',
