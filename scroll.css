@@ -21,7 +21,7 @@ div {
   width: 350px;
   height: 100%;
   max-height: 500px;
-  top: 50%;
+  top: 50px;
   left: 50%;
   -webkit-perspective: 5000px;
   perspective: 5000px;
