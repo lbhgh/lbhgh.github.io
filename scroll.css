@@ -1,7 +1,7 @@
-body {
+/*body {
   background: #333;
-  /*overflow: hidden;*/
-}
+  overflow: hidden;
+}*/
 
 ::-webkit-scrollbar {
   display: none;
