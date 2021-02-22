@@ -65,6 +65,11 @@ div {
   user-select: none;
 }
 
+#content, .darkpanel{
+	color:#f5d142;
+	background-color: #5e5e56;
+}
+
 .backface > * {
   opacity: 0.25;
 }
