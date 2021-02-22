@@ -1,6 +1,6 @@
 body {
   background: #333;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 ::-webkit-scrollbar {
@@ -23,7 +23,6 @@ div {
   max-height: 500px;
   top: 500;
   left: 50%;
-  -webkit-perspective: 5000px;
   perspective: 5000px;
   transform: translate(-50%, -50%) rotateY(20deg);
 }
