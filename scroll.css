@@ -29,11 +29,11 @@ div {
 }
 
 #container p {
-  padding: 0 5px 0 5px;
+  padding: 50 5px 0 5px;
 }
 
 #container hr {
-  margin: 0 20px 0 20px;
+  margin: 50 20px 0 20px;
 }
 
 .panel-node {
