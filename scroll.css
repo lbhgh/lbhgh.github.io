@@ -8,7 +8,7 @@ body {
 }
 
 div {
-  margin: 50;
+  margin: 0;
   padding: 0;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
