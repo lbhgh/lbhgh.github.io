@@ -34,6 +34,11 @@ body{
 	background-color: black;
 }
 
+.darkpanel{
+	color:#f5d142;
+	background-color: #5e5e56;
+}
+
 img, video{
 	max-width: 600px;
 	border: 2px solid #eba613;
