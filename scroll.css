@@ -1,11 +1,6 @@
-/*body {
-  background: #333;
-  overflow: hidden;
-}*/
-
-/*::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
-}*/
+}
 
 div {
   margin: 0;
