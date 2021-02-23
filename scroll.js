@@ -1,3 +1,26 @@
+var darkMode = window.localStorage.getItem('darkMode');
+if(!darkMode){
+	darkMode =  false;
+}
+else if(darkMode === "true"){
+	darkMode = true;
+}
+else{
+	darkMode = false;
+}
+mode();
+
+
+function darkToggle(){
+	toggle();
+	mode();
+}
+
+function toggle(){
+	darkMode = !darkMode;
+	window.localStorage.setItem('darkMode',darkMode);	
+}
+
 // Hack to detect device scrollbar width.
 // When a mouse is plugged in, the contents of an element will shift over to accomodate the scrollbar.
 // We will detect this and shift the .panel-content's to the left via padding-right, else the panels and the main content view become out of sync.
