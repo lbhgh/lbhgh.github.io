@@ -39,9 +39,18 @@ function panel(html) {
   panelNode.classList.add('panel-node');
   
   panelCutoutNode.classList.add('panel-cutout');
-  
+
   panelContentNode.innerHTML = html;
-  panelContentNode.classList.add('panel-content');
+  /*panelContentNode.classList.add('panel-content');*/
+    if(darkMode || darkMode){
+		panelContentNode.classList.add('darkpanel');
+		panelContentNode.classList.remove('panel-content');
+	}
+	else{
+		panelContentNode.classList.remove('darkpanel');
+		panelContentNode.classList.add('panel-content');
+  }
+  
   
   panelCutoutNode.appendChild(panelContentNode);
   panelNode.appendChild(panelCutoutNode);
