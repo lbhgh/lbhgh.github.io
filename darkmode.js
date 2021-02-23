@@ -20,12 +20,12 @@ function mode(){
 	var button = document.getElementById("dark-button");
 	if(darkMode || darkMode){
 		document.body.classList.add("dark");
-		element.classList.add("darkpanel");
+		document.getElementById("content").classList.add('darkpanel');
 		button.innerText = "Light Mode";
 	}
 	else{
 		document.body.classList.remove("dark");
-		element.classList.remove("darkpanel");
+		document.getElementById("content").classList.add('darkpanel');
 		button.innerText = "Dark Mode";
 	}
 }
