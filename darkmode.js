@@ -21,11 +21,13 @@ function mode(){
 	if(darkMode || darkMode){
 		document.body.classList.add("dark");
 		document.getElementById("container").classList.add('darkpanel');
+		document.getElementById("container").classList.remove('panel-content');
 		button.innerText = "Light Mode";
 	}
 	else{
 		document.body.classList.remove("dark");
 		document.getElementById("container").classList.remove('darkpanel');
+		document.getElementById("container").classList.add('panel-content');
 		button.innerText = "Dark Mode";
 	}
 }
