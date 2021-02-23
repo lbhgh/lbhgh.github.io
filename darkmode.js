@@ -25,7 +25,7 @@ function mode(){
 	}
 	else{
 		document.body.classList.remove("dark");
-		document.getElementById("panel-node"").classList.remove('darkpanel');
+		document.getElementById("panel-node").classList.remove('darkpanel');
 		button.innerText = "Dark Mode";
 	}
 }
