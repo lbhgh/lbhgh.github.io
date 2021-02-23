@@ -47,7 +47,7 @@ div {
   height: 100%;
 }
 
-#content, .panel-content {
+/*#content,*/ .panel-content {
   background: #fefee0;
 }
 
