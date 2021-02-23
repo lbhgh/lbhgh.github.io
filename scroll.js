@@ -8,7 +8,7 @@ else if(darkMode === "true"){
 else{
 	darkMode = false;
 }
-mode();
+;
 
 
 function darkToggle(){
