@@ -1,25 +1,3 @@
-var darkMode = window.localStorage.getItem('darkMode');
-if(!darkMode){
-	darkMode =  false;
-}
-else if(darkMode === "true"){
-	darkMode = true;
-}
-else{
-	darkMode = false;
-}
-;
-
-
-function darkToggle(){
-	toggle();
-	mode();
-}
-
-function toggle(){
-	darkMode = !darkMode;
-	window.localStorage.setItem('darkMode',darkMode);	
-}
 
 // Hack to detect device scrollbar width.
 // When a mouse is plugged in, the contents of an element will shift over to accomodate the scrollbar.
@@ -64,16 +42,7 @@ function panel(html) {
   panelCutoutNode.classList.add('panel-cutout');
 
   panelContentNode.innerHTML = html;
-  /*panelContentNode.classList.add('panel-content');*/
-    if(darkMode || darkMode){
-		panelContentNode.classList.add('darkpanel');
-		panelContentNode.classList.remove('panel-content');
-	}
-	else{
-		panelContentNode.classList.remove('darkpanel');
-		panelContentNode.classList.add('panel-content');
-  }
-  
+  panelContentNode.classList.add('panel-content');
   
   panelCutoutNode.appendChild(panelContentNode);
   panelNode.appendChild(panelCutoutNode);
